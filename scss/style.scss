@@ -1,0 +1,95 @@
+// import bootstrap core files
+@import "../bower_components/bootstrap/scss/bootstrap";
+
+///add custom css here
+
+body {
+  padding-top: 1.85rem;
+}
+/*
+ * font weight
+ */
+.font-light{
+  font-weight:300;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+  top: 27px;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0; 
+  border-right: 1px solid #eee;
+  .navbar-toggler{
+    border:0;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .sidebar{
+    top: 57px;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    margin-top:30px;
+  }
+ 
+} 
+/* Sidebar navigation */
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+  width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+  margin-left: 0;
+}
+
+.sidebar .nav-link {
+  border-radius: 0;
+}
+.search {
+    padding: 0 15px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #eee;
+}
+
+.page-header{
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+  margin-bottom:2rem;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: .75rem;
+}
+/* Rating */
+.rating span.star {
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+}
+.rating span.star:hover:before, 
+.rating span.star:hover~span.star:before {
+    content: "\f005";
+    color: $yellow;
+}
+.rating span.star:before {
+    content: "\f006";
+    padding-right: 5px;
+    color: #777;
+}
+.card-footer{
+  background: $white;
+}
+.card-img-top{
+  border-bottom: 1px solid #eee;
+}
