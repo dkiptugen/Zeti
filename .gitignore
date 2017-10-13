@@ -37,6 +37,5 @@ ehthumbs.db
 Thumbs.db
 # Ignore bower_components, node_modules and .sass_cache #
 ######################
-/bower_components
 /node_modules
-/.sass_cache
+.sass_cache
