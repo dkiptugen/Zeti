@@ -21,7 +21,15 @@
             .when('/single-magazine', {
                 templateUrl : 'pages/single-magazine.html',
                 controller  : 'singleMagazineController'
+            })
+
+            // route for the cart page
+            .when('/cart', {
+                templateUrl : 'pages/cart.html',
+                controller  : 'cartController'
             });
+
+           
     });
 
     // create the controller and inject Angular's $scope
@@ -34,5 +42,9 @@
     });
 
     pdsApp.controller('singleMagazineController', function($scope) {
+       
+    });
+
+    pdsApp.controller('cartController', function($scope) {
        
     });
