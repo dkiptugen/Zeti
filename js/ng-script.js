@@ -27,6 +27,12 @@
             .when('/cart', {
                 templateUrl : 'pages/cart.html',
                 controller  : 'cartController'
+            })
+
+            // route for the checkout page
+            .when('/checkout', {
+                templateUrl : 'pages/checkout.html',
+                controller  : 'checkoutController'
             });
 
            
@@ -46,5 +52,9 @@
     });
 
     pdsApp.controller('cartController', function($scope) {
+       
+    });
+
+     pdsApp.controller('checkoutController', function($scope) {
        
     });
