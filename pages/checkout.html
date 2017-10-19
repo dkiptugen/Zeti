@@ -8,6 +8,59 @@
       <nav class="navbar navbar-light bg-light justify-content-between mb-3">
        <div class="navbar-text">Choose your payment method</div>
       </nav>
+      <div id="accordion" role="tablist">
+        <div class="card mb-2">
+          <div class="card-header" role="tab" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link btn-block text-left big" type="button" data-toggle="collapse" aria-expanded="true" aria-controls="collapseOne" data-target="#collapseOne">
+                Pay with Mpesa
+              </button>
+            </h5>
+          </div>
+
+          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <p class="card-text small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores unde libero, odio tempore rerum dolor ut placeat ad voluptas in tenetur explicabo facere nesciunt. Blanditiis laudantium tempore nisi necessitatibus sint.</p>
+              <form>
+                <div class="form-row align-items-center">
+                  <div class="col-lg-8">
+                    <label class="sr-only" for="inlineFormInput">Enter Phone Number</label>
+                    <input type="text" class="form-control mb-2 mb-sm-0" id="inlineFormInput" placeholder="Enter Phone Number">
+                  </div>                
+                  
+                  <div class="col-lg-4">
+                    <button type="submit" class="btn btn-success btn-block">Make Payment Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" role="tab" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="collapsed btn btn-link btn-block text-left" type="button" data-toggle="collapse" aria-expanded="false" aria-controls="collapseOne" data-target="#collapseTwo">
+                Pay with PayPal
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+               <p class="card-text small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores unde libero, odio tempore rerum dolor ut placeat ad voluptas in tenetur explicabo facere nesciunt. Blanditiis laudantium tempore nisi necessitatibus sint.</p>
+              <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName1">Email</label>
+                <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName1" placeholder="Email">
+
+                <label class="sr-only" for="inlineFormInputName2">Password</label>
+                <input type="password" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder="Password">
+
+
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
 
