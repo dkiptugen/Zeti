@@ -8802,6 +8802,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 body {
   padding-top: 1.85rem;
+  background: #f2f4f8;
 }
 
 /*
@@ -8821,6 +8822,7 @@ body {
   z-index: 1000;
   padding: 20px 0;
   border-right: 1px solid #eee;
+  background: #fff;
 }
 .sidebar .navbar-toggler {
   border: 0;
@@ -8843,6 +8845,8 @@ body {
 
 .sidebar .nav-item {
   width: 100%;
+  border-bottom: 1px solid #f7f7f7;
+  padding: 5px 0;
 }
 
 .sidebar .nav-item + .nav-item {
@@ -8851,6 +8855,7 @@ body {
 
 .sidebar .nav-link {
   border-radius: 0;
+  color: #343a40;
 }
 
 .search {
@@ -8898,4 +8903,5 @@ body {
 .card-img-top {
   border-bottom: 1px solid #eee;
 }
+
 /*# sourceMappingURL=style.css.map */
